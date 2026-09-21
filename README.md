@@ -87,7 +87,7 @@ npm run test:package
 npm pack --dry-run --json
 ```
 
-The package tests install a tarball into a disposable consumer outside this repository. They prefer npm's local cache but allow network requests for missing registry metadata or tarballs. They cover CommonJS, ESM, JSON-string configuration, nested discovery, local overrides and root ignores. Formatting fixtures cover TypeScript, TSX, SCSS, JSON and Markdown. CI tests Node 20, 22 and 24 with Prettier 3.9.8, plus Prettier 3.0.0 on Node 20.
+The package tests install a tarball into a disposable consumer outside this repository. They prefer npm's local cache but allow network requests for missing registry metadata or tarballs. They cover CommonJS, ESM, JSON-string configuration, nested discovery, local overrides and root ignores. Formatting fixtures cover TypeScript, TSX, SCSS, JSON and Markdown. CI tests Prettier 3.9.8 and 3.0.0 on Node 24.
 
 ## Releases
 
