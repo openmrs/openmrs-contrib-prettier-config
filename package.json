@@ -1,0 +1,36 @@
+{
+  "name": "@openmrs/prettier-config",
+  "version": "1.0.0",
+  "description": "Shared Prettier configuration for OpenMRS O3 frontend modules",
+  "license": "MPL-2.0",
+  "homepage": "https://github.com/openmrs/openmrs-contrib-prettier-config#readme",
+  "bugs": "https://github.com/openmrs/openmrs-contrib-prettier-config/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openmrs/openmrs-contrib-prettier-config.git"
+  },
+  "main": "./index.cjs",
+  "exports": "./index.cjs",
+  "files": [
+    "index.cjs"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test test/config.test.mjs",
+    "test:package": "node --test test/package.test.mjs"
+  },
+  "keywords": [
+    "openmrs",
+    "o3",
+    "prettier",
+    "prettier-config"
+  ],
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "devDependencies": {
+    "prettier": "3.9.8"
+  }
+}
