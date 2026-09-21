@@ -34,12 +34,12 @@ test('packed artifact supports consumer config discovery, overrides and ignores'
     const consumer = join(temporary, 'consumer');
     mkdirSync(consumer);
     writeFileSync(join(consumer, 'package.json'), JSON.stringify({ name: 'packed-config-consumer', private: true }));
-    // npm ci (or the CI compatibility install) primes the formatter cache first.
+    // Reuse cached tarballs, but allow registry metadata requests after a clean npm ci.
     run(
       npm,
       [
         'install',
-        '--offline',
+        '--prefer-offline',
         '--ignore-scripts',
         '--no-audit',
         '--no-fund',
